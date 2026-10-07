@@ -5,7 +5,7 @@ def two_sum(nums, target):
         complement = target - value
 
         if complement in seen:
-            return [seen[index], index]
+            return [seen[complement], index]
         else:
             seen[value] = index
 
